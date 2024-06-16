@@ -31,12 +31,12 @@ jobs:
             platforms: linux/amd64,linux/arm64
             device: cpu
 
-          - image: immich-machine-learning
-            context: machine-learning
-            file: machine-learning/Dockerfile
-            platforms: linux/amd64
-            device: cuda
-            suffix: -cuda
+#          - image: immich-machine-learning
+#            context: machine-learning
+#            file: machine-learning/Dockerfile
+#            platforms: linux/amd64
+#            device: cuda
+#            suffix: -cuda
 
           - image: immich-machine-learning
             context: machine-learning
@@ -45,12 +45,12 @@ jobs:
             device: openvino
             suffix: -openvino
 
-          - image: immich-machine-learning
-            context: machine-learning
-            file: machine-learning/Dockerfile
-            platforms: linux/arm64
-            device: armnn
-            suffix: -armnn
+#          - image: immich-machine-learning
+#            context: machine-learning
+#            file: machine-learning/Dockerfile
+#            platforms: linux/arm64
+#            device: armnn
+#            suffix: -armnn
 
           - image: immich-server
             context: .
